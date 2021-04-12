@@ -31,7 +31,7 @@ jobs:
       - name: Prepare and deploy
         env:
          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-         run: |
+        run: |
            npm install
            npm run lint
            ###
