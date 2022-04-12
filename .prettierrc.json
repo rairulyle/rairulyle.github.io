@@ -7,5 +7,5 @@
   "printWidth": 120,
   "importOrder": ["^@/(.*)$", "^[./]"],
   "importOrderSeparation": true,
-  "importOrderParserPlugins": ["decorators-legacy"]
+  "importOrderParserPlugins": ["typescript", "decorators-legacy"]
 }

@@ -1,0 +1,37 @@
+@import '../../../_variables';
+
+.container {
+  display: flex;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 6px;
+    font-family: 'Noto Sans JP';
+  }
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $dark-text;
+  cursor: pointer;
+}
+
+a:hover {
+  color: $accent-text;
+}
+
+.mat-toolbar {
+  color: $dark-text;
+  background-color: transparent;
+  .item {
+    padding: 0 10px;
+  }
+}
