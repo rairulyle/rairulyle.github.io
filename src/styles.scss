@@ -1,15 +1,31 @@
 @import './theme.scss';
+@import './_variables';
+
+body {
+  margin: 0;
+}
 
 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
 }
+
 ::selection {
   color: #ffffff;
   background: #7289da;
 }
 
-body {
-  margin: 0;
+a:link,
+a:visited {
+  text-decoration: none;
+  // color: $dark-text;
+  // cursor: pointer;
+  // &.theme-alternate {
+  //   color: $light-text;
+  // }
 }
+
+// a:hover {
+//   color: $accent-text !important;
+// }

@@ -1,2 +1,13 @@
-<app-nav-bar></app-nav-bar>
-<app-hero></app-hero>
+<mat-drawer-container autosize>
+  <app-nav-bar></app-nav-bar>
+  <app-hero></app-hero>
+  <mat-drawer #drawer mode="over">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+
+  <button type="button" mat-button (click)="drawer.toggle()">Toggle sidenav</button>
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+</mat-drawer-container>

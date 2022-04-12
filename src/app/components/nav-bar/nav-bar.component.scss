@@ -16,20 +16,9 @@
     font-family: 'Noto Sans JP';
   }
 }
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: $dark-text;
-  cursor: pointer;
-}
-
-a:hover {
-  color: $accent-text;
-}
-
 .mat-toolbar {
-  color: $dark-text;
+  position: fixed;
+  z-index: 999;
   background-color: transparent;
   .item {
     padding: 0 10px;

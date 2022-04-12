@@ -10,10 +10,7 @@ import {
 
 export const PARTICLES_OPTIONS: RecursivePartial<IOptions> = {
   fpsLimit: 60,
-  backgroundMode: {
-    enable: true,
-    zIndex: -1,
-  },
+  fullScreen: false,
   particles: {
     number: {
       value: 10,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeSwitcherService } from 'src/app/services/theme-switcher.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss'],
 })
 export class NavBarComponent implements OnInit {
-  constructor() {}
+  get islightMode(): string {
+    return this.themeSwitcher.islightMode ? 'dark' : 'light';
+  }
+
+  constructor(private themeSwitcher: ThemeSwitcherService) {}
 
   ngOnInit(): void {}
 }

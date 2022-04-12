@@ -9,7 +9,6 @@ import { PARTICLES_OPTIONS } from './constants/particles-options';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent implements OnInit {
-  id = 'tsparticles';
   particlesOptions = PARTICLES_OPTIONS;
 
   constructor() {}

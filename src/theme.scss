@@ -12,7 +12,7 @@
 // Fonts
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;900&display=swap');
 
 $fontConfig: (
   display-4: mat.define-typography-level(112px, 112px, 300, 'Open Sans', -0.0134em),
@@ -222,16 +222,16 @@ $theme: (
   accent: $theme-accent,
   warn: $theme-warn,
   is-dark: true,
-  foreground: $mat-dark-theme-foreground,
-  background: $mat-dark-theme-background,
+  foreground: $mat-light-theme-foreground,
+  background: $mat-light-theme-background,
 );
 $altTheme: (
   primary: $theme-primary,
   accent: $theme-accent,
   warn: $theme-warn,
   is-dark: false,
-  foreground: $mat-light-theme-foreground,
-  background: $mat-light-theme-background,
+  foreground: $mat-dark-theme-foreground,
+  background: $mat-dark-theme-background,
 );
 
 // Theme Init
@@ -251,6 +251,10 @@ $altTheme: (
   margin: 0 0.65em;
   min-width: 3em;
   line-height: 36.4px;
+}
+
+.mat-raised-button.mat-primary {
+  color: #ffffff !important;
 }
 
 .mat-standard-chip {
