@@ -1,6 +1,7 @@
 .hero-container {
+  display: flex;
   position: relative;
-  min-height: calc(100vh);
+  min-height: 100vh;
 
   ::ng-deep #tsparticles {
     position: absolute;
@@ -10,6 +11,17 @@
     right: 0;
     padding: 0;
     margin: 0;
-    z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+    z-index: -1;
+  }
+
+  .hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+      font: 800 68px / 109px 'Open Sans';
+    }
   }
 }

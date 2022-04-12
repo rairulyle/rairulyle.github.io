@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ThemeSwitcherService {
-  private favicon: HTMLLinkElement = document.querySelector('#favicon') as HTMLLinkElement;
   private bodyElement = document.body;
 
   get islightMode(): boolean {
@@ -19,7 +18,6 @@ export class ThemeSwitcherService {
 
   switchTheme(): void {
     this.islightMode ? this.darkMode() : this.lightMode();
-    this.favicon.href = `assets/svg/rairulyle-logo-${this.currentTheme}.svg`;
   }
 
   private lightMode(): void {
