@@ -1,5 +1,4 @@
 @import './theme.scss';
-@import './_variables';
 
 body {
   margin: 0;
@@ -13,7 +12,7 @@ body {
 
 ::selection {
   color: #ffffff;
-  background: #7289da;
+  background: var(--accent-color);
 }
 
 a:link,

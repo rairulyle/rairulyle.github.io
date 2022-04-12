@@ -1,14 +1,10 @@
 <div class="hero-container">
-  <ng-particles
-    [id]="'tsparticles'"
-    [options]="particlesOptions"
-    (particlesLoaded)="particlesLoaded($event)"
-    [particlesInit]="particlesInit"
-  ></ng-particles>
+  <ng-particles [id]="'tsparticles'" [options]="particlesOptions"></ng-particles>
   <div class="hero-text">
     <h1>
       Konnichiwassup!<br />
-      I am Lyle (ライル).
+      I am <span class="highlight">Lyle (ライル)</span>. <br />
+      And I am a <span class="highlight">Web Developer</span>!
     </h1>
   </div>
 </div>

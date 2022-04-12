@@ -4,7 +4,7 @@
   min-height: 100vh;
 
   ::ng-deep #tsparticles {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -22,6 +22,9 @@
 
     h1 {
       font: 800 68px / 109px 'Open Sans';
+      span.highlight {
+        color: var(--primary-color);
+      }
     }
   }
 }

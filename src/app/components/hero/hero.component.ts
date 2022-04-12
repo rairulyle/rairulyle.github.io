@@ -15,12 +15,12 @@ export class HeroComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  particlesLoaded(container: Container): void {
-    console.log(container);
-  }
+  // particlesLoaded(container: Container): void {
+  //   console.log(container);
+  // }
 
-  async particlesInit(main: Main): Promise<void> {
-    console.log(main);
-    // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
-  }
+  // async particlesInit(main: Main): Promise<void> {
+  //   console.log(main);
+  //   // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
+  // }
 }
