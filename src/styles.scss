@@ -1,7 +1,12 @@
 @import './theme.scss';
+@import '~flexboxgrid-sass';
 
 body {
   margin: 0;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .container {
@@ -18,13 +23,9 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  // color: $dark-text;
-  // cursor: pointer;
-  // &.theme-alternate {
-  //   color: $light-text;
-  // }
+  color: inherit;
 }
 
-// a:hover {
-//   color: $accent-text !important;
-// }
+.highlight {
+  color: var(--primary-color) !important;
+}

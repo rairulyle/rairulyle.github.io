@@ -1,4 +1,4 @@
-@import '~sass-breakpoints';
+@import '../../../breakpoints.scss';
 
 .hero-container {
   display: flex;
@@ -6,7 +6,7 @@
   min-height: 100vh;
 
   ::ng-deep #tsparticles {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -16,12 +16,12 @@
     z-index: -1;
   }
 
-  .hero-text {
+  .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-
+    flex-direction: column;
     h1 {
       font-weight: 800;
 
@@ -33,10 +33,6 @@
       @include breakpoint('lg') {
         font-size: 64px;
         line-height: 109px;
-      }
-
-      span.highlight {
-        color: var(--primary-color);
       }
     }
   }

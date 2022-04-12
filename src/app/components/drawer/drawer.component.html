@@ -1,0 +1,9 @@
+<mat-drawer-container autosize>
+  <app-nav-bar [items]="navItems" (openDrawer)="drawer.toggle()"></app-nav-bar>
+  <ng-content></ng-content>
+  <mat-drawer #drawer mode="over">
+    <mat-nav-list>
+      <a mat-list-item [href]="item.url" *ngFor="let item of navItems">{{ item.name }}</a>
+    </mat-nav-list>
+  </mat-drawer>
+</mat-drawer-container>

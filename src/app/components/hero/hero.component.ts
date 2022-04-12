@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Container, Main } from 'tsparticles';
 
 import { PARTICLES_OPTIONS } from './constants/particles-options';
 

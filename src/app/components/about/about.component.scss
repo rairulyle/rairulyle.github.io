@@ -1,0 +1,35 @@
+@import '../../../breakpoints.scss';
+
+:host section {
+  mat-card {
+    padding: 80px 0;
+    height: 100%;
+
+    .profile-picture-container {
+      @include breakpoint('xs', 'lg') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+
+      .profile-picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px;
+      }
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include breakpoint('xs', 'lg') {
+        text-align: center;
+      }
+    }
+  }
+}
