@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutModule } from './components/about/about.module';
 import { HeroModule } from './components/hero/hero.module';
 import { NavBarModule } from './components/nav-bar/nav-bar.module';
 import { ThemeSwitcherService } from './services/theme-switcher.service';
@@ -22,6 +23,7 @@ import { ThemeSwitcherService } from './services/theme-switcher.service';
     MatIconModule,
     MatSidenavModule,
     NavBarModule,
+    AboutModule,
   ],
   providers: [ThemeSwitcherService, MatIconRegistry],
   bootstrap: [AppComponent],

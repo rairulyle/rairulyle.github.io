@@ -1,3 +1,5 @@
+@import '~sass-breakpoints';
+
 .hero-container {
   display: flex;
   position: relative;
@@ -21,7 +23,18 @@
     width: 100%;
 
     h1 {
-      font: 800 68px / 109px 'Open Sans';
+      font-weight: 800;
+
+      @include breakpoint('md') {
+        font-size: 48px;
+        line-height: 82px;
+      }
+
+      @include breakpoint('lg') {
+        font-size: 64px;
+        line-height: 109px;
+      }
+
       span.highlight {
         color: var(--primary-color);
       }

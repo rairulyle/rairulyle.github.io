@@ -28,6 +28,7 @@
     "flexboxgrid-sass": "^8.0.5",
     "ng-particles": "^2.43.1",
     "rxjs": "^7.5.5",
+    "sass-breakpoints": "^2.1.0",
     "tslib": "^2.0.0",
     "tsparticles": "^1.43.1",
     "zone.js": "~0.11.4"
