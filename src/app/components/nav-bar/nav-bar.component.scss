@@ -10,6 +10,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  img {
+    width: 100%;
+    height: auto;
+  }
   span {
     margin-left: 6px;
     font-family: 'Noto Sans JP';
