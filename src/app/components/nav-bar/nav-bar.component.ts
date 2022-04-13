@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { BreakpointObserverService } from 'src/app/services/breakpoint-observer.service';
-import { BREAKPOINTS } from 'src/app/services/constants/breakpoints.enum';
-import { ThemeSwitcherService } from 'src/app/services/theme-switcher.service';
+
+import { BreakpointObserverService, ThemeSwitcherService } from '@app/services';
+import { BREAKPOINTS } from '@app/services/constants';
 
 import { NavItem } from '../drawer/models/nav-item.model';
 

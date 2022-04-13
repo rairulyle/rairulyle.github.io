@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "johnpapa.angular-essentials",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "rbbit.typescript-hero",
+    "formulahendry.auto-rename-tag"
+  ]
+}

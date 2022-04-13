@@ -5,7 +5,7 @@
   "bracketSpacing": true,
   "singleQuote": true,
   "printWidth": 120,
-  "importOrder": ["^@/(.*)$", "^[./]"],
+  "importOrder": ["^@/(.*)$", "^@(app|components|services)/(.*)$", "^[./]"],
   "importOrderSeparation": true,
   "importOrderParserPlugins": ["typescript", "decorators-legacy"]
 }

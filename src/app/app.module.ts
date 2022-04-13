@@ -6,11 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutModule } from './components/about/about.module';
-import { DrawerModule } from './components/drawer/drawer.module';
-import { HeroModule } from './components/hero/hero.module';
-import { BreakpointObserverService } from './services/breakpoint-observer.service';
-import { ThemeSwitcherService } from './services/theme-switcher.service';
+import { HeroModule, DrawerModule, AboutModule } from './components';
+import { ThemeSwitcherService, BreakpointObserverService, ProfileService } from './services';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,7 +21,7 @@ import { ThemeSwitcherService } from './services/theme-switcher.service';
     DrawerModule,
     AboutModule,
   ],
-  providers: [ThemeSwitcherService, MatIconRegistry, BreakpointObserverService],
+  providers: [ThemeSwitcherService, MatIconRegistry, BreakpointObserverService, ProfileService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
