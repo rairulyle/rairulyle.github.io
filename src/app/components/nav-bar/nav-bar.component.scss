@@ -21,6 +21,8 @@
 }
 .mat-toolbar {
   position: fixed;
+  display: flex;
+  gap: 10px;
   z-index: 999;
   background-color: transparent;
   .item {

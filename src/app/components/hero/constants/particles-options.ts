@@ -20,7 +20,7 @@ export const PARTICLES_OPTIONS: RecursivePartial<IOptions> = {
       },
     },
     color: {
-      value: ['#7289da', '#d5dcf4', '#556ccb'],
+      value: ['#5865f2', '#cdd1fb', '#3d49ec'],
     },
     destroy: {
       mode: DestroyMode.none,

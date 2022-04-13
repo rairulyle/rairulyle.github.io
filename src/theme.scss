@@ -148,22 +148,22 @@ $mat-dark-theme-background: (
 // Theme Config
 
 body {
-  --primary-color: #7289da;
-  --primary-lighter-color: #d5dcf4;
-  --primary-darker-color: #556ccb;
-  --text-primary-color: #{$dark-primary-text};
+  --primary-color: #5870f2;
+  --primary-lighter-color: #cdd4fb;
+  --primary-darker-color: #3d53ec;
+  --text-primary-color: #{$light-primary-text};
   --text-primary-lighter-color: #{$dark-primary-text};
   --text-primary-darker-color: #{$light-primary-text};
 }
 $mat-primary: (
-  main: #7289da,
-  lighter: #d5dcf4,
-  darker: #556ccb,
-  200: #7289da,
+  main: #5870f2,
+  lighter: #cdd4fb,
+  darker: #3d53ec,
+  200: #5870f2,
   // For slide toggle,
   contrast:
     (
-      main: $dark-primary-text,
+      main: $light-primary-text,
       lighter: $dark-primary-text,
       darker: $light-primary-text,
     ),
@@ -171,22 +171,22 @@ $mat-primary: (
 $theme-primary: mat.define-palette($mat-primary, main, lighter, darker);
 
 body {
-  --accent-color: #7289da;
-  --accent-lighter-color: #d5dcf4;
-  --accent-darker-color: #556ccb;
-  --text-accent-color: #{$dark-primary-text};
+  --accent-color: #5865f2;
+  --accent-lighter-color: #cdd1fb;
+  --accent-darker-color: #3d49ec;
+  --text-accent-color: #{$light-primary-text};
   --text-accent-lighter-color: #{$dark-primary-text};
   --text-accent-darker-color: #{$light-primary-text};
 }
 $mat-accent: (
-  main: #7289da,
-  lighter: #d5dcf4,
-  darker: #556ccb,
-  200: #7289da,
+  main: #5865f2,
+  lighter: #cdd1fb,
+  darker: #3d49ec,
+  200: #5865f2,
   // For slide toggle,
   contrast:
     (
-      main: $dark-primary-text,
+      main: $light-primary-text,
       lighter: $dark-primary-text,
       darker: $light-primary-text,
     ),
@@ -219,7 +219,7 @@ $theme: (
   primary: $theme-primary,
   accent: $theme-accent,
   warn: $theme-warn,
-  is-dark: true,
+  is-dark: false,
   foreground: $mat-light-theme-foreground,
   background: $mat-light-theme-background,
 );
@@ -227,7 +227,7 @@ $altTheme: (
   primary: $theme-primary,
   accent: $theme-accent,
   warn: $theme-warn,
-  is-dark: false,
+  is-dark: true,
   foreground: $mat-dark-theme-foreground,
   background: $mat-dark-theme-background,
 );
