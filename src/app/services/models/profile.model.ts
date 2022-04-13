@@ -4,20 +4,20 @@ export interface Profile {
   experience: Experience[];
 }
 
-interface Experience {
+export interface Experience {
   company: string;
   active: boolean;
   type: string;
   position: Position[];
 }
 
-interface Position {
+export interface Position {
   name: string;
   startDate: string;
   endDate?: string;
 }
 
-interface Skills {
+export interface Skills {
   coding: string[];
   design: string[];
   application: string[];

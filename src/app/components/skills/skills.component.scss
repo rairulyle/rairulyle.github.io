@@ -1,0 +1,11 @@
+:host {
+  mat-card {
+    padding-bottom: 80px;
+    mat-chip-list {
+      margin-bottom: 10px;
+      span {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

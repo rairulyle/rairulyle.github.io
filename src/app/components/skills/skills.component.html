@@ -1,0 +1,30 @@
+<section>
+  <mat-card>
+    <div class="container" aria-label="skills">
+      <div class="row">
+        <h2 class="col-xs-12" aria-label="coding">coding</h2>
+        <mat-chip-list class="col-xs-12">
+          <mat-chip *ngFor="let coding of skills.coding" color="primary" selected>{{ coding }}</mat-chip>
+        </mat-chip-list>
+      </div>
+      <div class="row">
+        <h2 class="col-xs-12" aria-label="design language">design language</h2>
+        <mat-chip-list class="col-xs-12">
+          <mat-chip *ngFor="let design of skills.design" color="primary" selected>{{ design }}</mat-chip>
+        </mat-chip-list>
+      </div>
+      <div class="row">
+        <h2 class="col-xs-12" aria-label="application">application</h2>
+        <mat-chip-list class="col-xs-12">
+          <mat-chip *ngFor="let application of skills.application" color="primary" selected>{{ application }}</mat-chip>
+        </mat-chip-list>
+      </div>
+      <div class="row">
+        <h2 class="col-xs-12" aria-label="methodology">methodology</h2>
+        <mat-chip-list class="col-xs-12">
+          <mat-chip *ngFor="let methodology of skills.methodology" color="primary" selected>{{ methodology }}</mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+  </mat-card>
+</section>
