@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar id="toolbar" [ngClass]="isScrolled ? 'mat-elevation-z3' : 'transparent'">
   <div class="container">
     <a class="logo" href="/">
       <img [src]="'assets/svg/rairulyle-logo-' + logoScheme + '.svg'" alt="logo-only" loading="lazy" />

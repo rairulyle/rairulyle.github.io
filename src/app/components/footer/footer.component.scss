@@ -5,7 +5,7 @@ footer {
     align-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 0;
+    padding: 80px 0 20px;
 
     .profile-picture-container {
       img {
@@ -14,7 +14,7 @@ footer {
         transform: translateZ(0);
       }
     }
-    .credit h2 {
+    .credit h3 {
       margin: 0;
     }
   }

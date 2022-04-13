@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
 
 import { BreakpointObserverService, ThemeSwitcherService } from '@app/services';
 import { BREAKPOINTS } from '@app/services/constants';
@@ -13,6 +13,13 @@ import { NavItem } from '../drawer/models/nav-item.model';
 export class NavBarComponent implements OnInit {
   @Input() items!: NavItem[];
   @Output() openDrawer = new EventEmitter<void>();
+
+  isScrolled = false;
+
+  @HostListener('window:scroll')
+  scrollEvent(): void {
+    window.pageYOffset >= 150 ? (this.isScrolled = true) : (this.isScrolled = false);
+  }
 
   get logoScheme(): string {
     return this.themeSwitcher.isLightMode ? 'dark' : 'light';
