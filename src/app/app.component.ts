@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
+import { ProfileService } from './services';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'rairulyle-portfolio';
+  constructor(private profileService: ProfileService) {
+    this.profileService.get().subscribe();
+  }
 }

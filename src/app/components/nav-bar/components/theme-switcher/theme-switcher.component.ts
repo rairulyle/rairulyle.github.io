@@ -8,7 +8,7 @@ import { ThemeSwitcherService } from 'src/app/services/theme-switcher.service';
 })
 export class ThemeSwitcherComponent implements OnInit {
   get islightMode(): boolean {
-    return this.themeSwitcher.islightMode;
+    return this.themeSwitcher.isLightMode;
   }
 
   constructor(private themeSwitcher: ThemeSwitcherService) {}

@@ -1,11 +1,14 @@
 :host {
   mat-card {
-    padding-bottom: 80px;
-    mat-chip-list {
+    padding: 0 0 80px;
+
+    span {
+      margin-bottom: 5px;
+    }
+
+    mat-chip-list:not(:last-of-type),
+    .row:not(:last-of-type) {
       margin-bottom: 10px;
-      span {
-        margin-bottom: 10px;
-      }
     }
   }
 }

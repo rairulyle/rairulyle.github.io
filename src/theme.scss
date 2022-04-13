@@ -10,9 +10,7 @@
 // have to load a single css file for Angular Material in your app.
 
 // Fonts
-@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;900&display=swap');
+@import 'fonts.scss';
 
 $fontConfig: (
   display-4: mat.define-typography-level(112px, 112px, 300, 'Open Sans', -0.0134em),
@@ -253,14 +251,6 @@ $altTheme: (
   line-height: 36.4px;
 }
 
-.mat-raised-button.mat-primary {
-  color: #ffffff !important;
-}
-
-.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
-  color: #ffffff !important;
-}
-
 .mat-standard-chip {
   padding: 0.5em 0.85em;
   min-height: 2.5em;
@@ -272,4 +262,9 @@ $altTheme: (
   .mat-badge-content {
     font-family: 'Open Sans';
   }
+}
+
+section mat-card {
+  border-radius: 0px !important;
+  box-shadow: none !important;
 }

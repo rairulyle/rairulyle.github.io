@@ -6,19 +6,7 @@ export const NAV_ITEMS: NavItem[] = [
     url: '#skills',
   },
   {
-    name: 'experience',
-    url: '#experience',
-  },
-  {
     name: 'projects',
     url: '#projects',
-  },
-  {
-    name: 'others',
-    url: '#others',
-  },
-  {
-    name: 'connect',
-    url: '#connect',
   },
 ];

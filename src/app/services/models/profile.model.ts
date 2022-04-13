@@ -2,6 +2,7 @@ export interface Profile {
   name: string;
   skills: Skills;
   experience: Experience[];
+  socials: Socials[];
 }
 
 export interface Experience {
@@ -22,4 +23,10 @@ export interface Skills {
   design: string[];
   application: string[];
   methodology: string[];
+}
+
+export interface Socials {
+  name: string;
+  icon: string;
+  url: string;
 }

@@ -6,18 +6,18 @@ import { Injectable } from '@angular/core';
 export class ThemeSwitcherService {
   private bodyElement = document.body;
 
-  get islightMode(): boolean {
+  get isLightMode(): boolean {
     return !this.bodyElement.classList.contains('theme-alternate');
   }
 
   get currentTheme(): string {
-    return this.islightMode ? 'light' : 'dark';
+    return this.isLightMode ? 'light' : 'dark';
   }
 
   constructor() {}
 
   switchTheme(): void {
-    this.islightMode ? this.darkMode() : this.lightMode();
+    this.isLightMode ? this.darkMode() : this.lightMode();
   }
 
   private lightMode(): void {

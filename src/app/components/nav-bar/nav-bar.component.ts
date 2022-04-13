@@ -14,8 +14,8 @@ export class NavBarComponent implements OnInit {
   @Input() items!: NavItem[];
   @Output() openDrawer = new EventEmitter<void>();
 
-  get islightMode(): string {
-    return this.themeSwitcher.islightMode ? 'dark' : 'light';
+  get logoScheme(): string {
+    return this.themeSwitcher.isLightMode ? 'dark' : 'light';
   }
 
   get isLarge(): boolean {

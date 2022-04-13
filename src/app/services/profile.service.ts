@@ -1,16 +1,17 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 import { Profile } from '@services/models';
 
-@Injectable({
-  providedIn: 'root',
-})
+import { PROFILE_DATA } from './constants/profile';
+
+@Injectable()
 export class ProfileService {
-  constructor(private http: HttpClient) {}
+  private profile: Profile = PROFILE_DATA;
+
+  constructor() {}
 
   get(): Observable<Profile> {
-    return this.http.get<Profile>('assets/data/profile.json');
+    return of(this.profile);
   }
 }

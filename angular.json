@@ -30,7 +30,7 @@
               "src/assets",
               { "glob": "mdi.svg", "input": "./node_modules/@mdi/angular-material", "output": "./assets" }
             ],
-            "styles": ["src/theme.scss", "src/styles.scss"],
+            "styles": ["src/fonts.scss", "src/theme.scss", "src/styles.scss"],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
