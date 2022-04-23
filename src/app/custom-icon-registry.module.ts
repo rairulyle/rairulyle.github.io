@@ -12,6 +12,6 @@ export class CustomIconRegistryModule {
   constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
     matIconRegistry.addSvgIcon('linkedin', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/linkedin.svg'));
     matIconRegistry.addSvgIcon('github', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/github.svg'));
-    matIconRegistry.addSvgIcon('gitlab', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/gitlab.svg'));
+    matIconRegistry.addSvgIcon('instagram', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/instagram.svg'));
   }
 }

@@ -125,9 +125,9 @@ export const PROFILE_DATA: Profile = {
       url: 'https://github.com/rairulyle',
     },
     {
-      name: 'GitLab',
-      icon: 'gitlab',
-      url: 'https://gitlab.com/skullpluggery',
+      name: 'Instagram',
+      icon: 'instagram',
+      url: 'https://rairulyle.github.io/',
     },
   ],
   projects: [
