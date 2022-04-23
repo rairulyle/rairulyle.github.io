@@ -117,7 +117,7 @@ export const PROFILE_DATA: Profile = {
     {
       name: 'LinkedIn',
       icon: 'linkedin',
-      url: 'https://www.linkedin.com/in/rairulyle/',
+      url: 'https://www.linkedin.com/in/rairulyle',
     },
     {
       name: 'GitHub',
@@ -127,7 +127,7 @@ export const PROFILE_DATA: Profile = {
     {
       name: 'Instagram',
       icon: 'instagram',
-      url: 'https://rairulyle.github.io/',
+      url: 'https://www.instagram.com/rairulyle',
     },
   ],
   projects: [
