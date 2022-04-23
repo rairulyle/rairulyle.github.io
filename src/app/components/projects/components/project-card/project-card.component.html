@@ -1,10 +1,12 @@
-<mat-card class="mat-elevation-z0"
-  ><a [href]="project.url" target="_blank"><img [src]="project.image" [alt]="project.title" loading="lazy" /></a>
+<mat-card [style]="'background-color:' + project.backgroundColor" class="mat-elevation-z0"
+  ><a [ngClass]="{ disabled: !project.url }" [href]="project.url" target="_blank"
+    ><img [src]="project.image" [alt]="project.title" loading="lazy"
+  /></a>
 </mat-card>
 <h1>
   <strong>{{ project.title }}</strong>
 </h1>
 <p class="mat-subheading-2">{{ project.description }}</p>
-<div class="action">
+<div class="action" *ngIf="project.source">
   <a mat-flat-button [href]="project.source" target="_blank" disableRipple> SOURCE <mat-icon>launch</mat-icon> </a>
 </div>

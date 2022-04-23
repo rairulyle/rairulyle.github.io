@@ -2,11 +2,11 @@ import { NavItem } from '../models/nav-item.model';
 
 export const NAV_ITEMS: NavItem[] = [
   {
-    name: 'skills',
+    name: 'SKILLS',
     url: '#skills',
   },
   {
-    name: 'projects',
+    name: 'PROJECTS',
     url: '#projects',
   },
 ];

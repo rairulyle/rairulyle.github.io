@@ -132,11 +132,59 @@ export const PROFILE_DATA: Profile = {
   ],
   projects: [
     {
-      title: 'Manulife',
-      description: 'lorem ipsum awit lorem lorem',
+      title: 'Manulife - CWS',
+      description:
+        'A multi-country customer website that allows users to easily view their Manulife policy information, check fund value, view payment information, pay online, and more!',
+      backgroundColor: '#ccedde',
       image: `${projectImagePath}/Manulife.png`,
-      url: '',
-      source: '',
+      url: 'https://online.manulife.com.ph/login',
+    },
+    {
+      title: 'Personal Home Assistant',
+      description:
+        'A personal project that aims to provide home automation and a minimal design GUI. Supports Dark Mode.',
+      backgroundColor: '#d4dafe',
+      image: `${projectImagePath}/HomeAssistant.png`,
+      url: 'https://github.com/rairulyle/HA_UI-Lovelace-Minimalist-Dashboard',
+      source: 'https://github.com/rairulyle/HA_UI-Lovelace-Minimalist-Dashboard',
+    },
+    {
+      title: 'PSVita - Persona 5 Theme',
+      description: 'A personal project for PS Vita, a Persona 5-inspired theme with over 23,500+ downloads.',
+      backgroundColor: '#f4b6b8',
+      image: `${projectImagePath}/Persona5_PSV_Theme.png`,
+      url: 'http://psv.altervista.org/theme.php?id=1521459131',
+      source: 'https://github.com/rairulyle/PSV_Persona-5-Official-Theme',
+    },
+    {
+      title: 'ReliefAgad',
+      description:
+        'A government project that facilitates automated cash aid distributions of the emergency subsidy program funds by DSWD.',
+      backgroundColor: '#bfc3d0',
+      image: `${projectImagePath}/RelieafAgad.png`,
+    },
+    {
+      title: 'Air Quality Monitoring System (AQMS)',
+      description:
+        'A web application that aims to monitor the surface air quality from the different distant zones of a local municipality.',
+      backgroundColor: '#b2dfdb',
+      image: `${projectImagePath}/AQMS.png`,
+      url: 'http://www.jocm.us/index.php?m=content&c=index&a=show&catid=221&id=1373',
+      source: 'https://github.com/AQMS-Capstone/AQMS-Carmona',
+    },
+    {
+      title: 'EZ-Search',
+      description:
+        'A personal company project in OOCL that allows users to easily extract AN/DO payload from all environments (PROD, PRE-PROD, and QA).',
+      backgroundColor: '#b2b2b2',
+      image: `${projectImagePath}/EZ-Search.png`,
+    },
+    {
+      title: 'EZ-DBCompare',
+      description:
+        'A personal company project in OOCL that allows users to easily compare database tables from all environments (PROD, PRE-PROD, and QA).',
+      backgroundColor: '#b8bcc3',
+      image: `${projectImagePath}/EZ-DBCompare.png`,
     },
   ],
 };

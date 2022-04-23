@@ -35,8 +35,9 @@ export interface Social {
 
 export interface Project {
   title: string;
-  image: string;
   description: string;
-  source: string;
-  url: string;
+  image: string;
+  backgroundColor: string;
+  source?: string;
+  url?: string;
 }

@@ -10,10 +10,14 @@ import { Project } from '@app/services/models';
 })
 export class ProjectsComponent implements OnInit {
   projects!: Project[];
+  gitHubLink!: string;
 
   constructor(private profileService: ProfileService) {}
 
   ngOnInit(): void {
-    this.profileService.get().subscribe((res) => (this.projects = res.projects));
+    this.profileService.get().subscribe((res) => {
+      this.projects = res.projects;
+      this.gitHubLink = res.socials.find((social) => (social.name = 'name'))?.url ?? '';
+    });
   }
 }
