@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { ApolloClientOptions, InMemoryCache } from '@apollo/client/core';
-import { ApolloModule, APOLLO_OPTIONS } from 'apollo-angular';
+import { InMemoryCache } from '@apollo/client';
+import { ApolloModule, APOLLO_OPTIONS, NamedOptions } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 
-export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
+export function createApollo(httpLink: HttpLink): NamedOptions {
   return {
-    aavegotchiLending: {
+    aavegotchiLendings: {
       cache: new InMemoryCache(),
       link: httpLink.create({
         uri: 'https://api.thegraph.com/subgraphs/name/froid1911/aavegotchi-lending',
@@ -21,7 +21,7 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
 }
 
 @NgModule({
-  exports: [ApolloModule],
+  imports: [ApolloModule],
   providers: [
     {
       provide: APOLLO_OPTIONS,

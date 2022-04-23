@@ -4,6 +4,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "rbbit.typescript-hero",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+    "apollographql.vscode-apollo"
   ]
 }

@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 
 import { Profile } from '@services/models';
 
-import { PROFILE_DATA } from './constants/profile';
+import { PROFILE_DATA } from './constants';
 
 @Injectable()
 export class ProfileService {
