@@ -1,8 +1,8 @@
 @import '../../../breakpoints.scss';
 
 :host section {
-  margin-top: 80px;
   mat-card {
+    padding-top: 80px !important;
     height: 100%;
 
     .about {
