@@ -1,0 +1,10 @@
+<mat-card class="mat-elevation-z0"
+  ><a [href]="project.url" target="_blank"><img [src]="project.image" [alt]="project.title" loading="lazy" /></a>
+</mat-card>
+<h1>
+  <strong>{{ project.title }}</strong>
+</h1>
+<p class="mat-subheading-2">{{ project.description }}</p>
+<div class="action">
+  <a mat-flat-button [href]="project.source" target="_blank" disableRipple> SOURCE <mat-icon>launch</mat-icon> </a>
+</div>

@@ -1,0 +1,10 @@
+$spacing: 1.5rem;
+
+.row {
+  margin-left: -$spacing;
+  margin-right: -$spacing;
+  [class*='col'] {
+    padding-left: $spacing;
+    padding-right: $spacing;
+  }
+}

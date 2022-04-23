@@ -11,6 +11,10 @@ import { Profile } from '@app/services/models';
 export class AboutComponent implements OnInit {
   private profile!: Profile;
 
+  get email(): string {
+    return this.profile.email;
+  }
+
   get company(): string {
     return this.profile?.experience.find((exp) => exp.active)?.company ?? '';
   }

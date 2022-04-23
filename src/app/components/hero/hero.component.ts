@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProfileService } from '@app/services';
-import { Profile, Socials } from '@app/services/models';
+import { Profile, Social } from '@app/services/models';
 
 import { PARTICLES_OPTIONS } from './constants/particles-options';
 
@@ -12,16 +12,12 @@ import { PARTICLES_OPTIONS } from './constants/particles-options';
 })
 export class HeroComponent implements OnInit {
   particlesOptions = PARTICLES_OPTIONS;
-  profile!: Profile;
-
-  get socials(): Socials[] {
-    return this.profile?.socials;
-  }
+  socials!: Social[];
 
   constructor(private profileService: ProfileService) {}
 
   ngOnInit(): void {
-    this.profileService.get().subscribe((res) => (this.profile = res));
+    this.profileService.get().subscribe((res) => (this.socials = res.socials));
   }
 
   // particlesLoaded(container: Container): void {

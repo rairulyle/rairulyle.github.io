@@ -264,7 +264,10 @@ $altTheme: (
   }
 }
 
-section mat-card {
-  border-radius: 0px !important;
-  box-shadow: none !important;
+section {
+  mat-card.section-card {
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    padding: 0 0 80px !important;
+  }
 }

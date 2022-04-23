@@ -1,7 +1,10 @@
 import { Profile } from '../models';
 
+const projectImagePath = 'assets/images/projects';
+
 export const PROFILE_DATA: Profile = {
   name: 'Lyle Vince Dela Cuesta',
+  email: 'lylevincedelacuesta@gmail.com',
   skills: {
     coding: [
       'Angular',
@@ -125,6 +128,15 @@ export const PROFILE_DATA: Profile = {
       name: 'GitLab',
       icon: 'gitlab',
       url: 'https://gitlab.com/skullpluggery',
+    },
+  ],
+  projects: [
+    {
+      title: 'Manulife',
+      description: 'lorem ipsum awit lorem lorem',
+      image: `${projectImagePath}/Manulife.png`,
+      url: '',
+      source: '',
     },
   ],
 };

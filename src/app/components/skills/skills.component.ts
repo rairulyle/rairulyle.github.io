@@ -9,15 +9,11 @@ import { Profile, Skills } from '@app/services/models';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
-  private profile!: Profile;
-
-  get skills(): Skills {
-    return this.profile?.skills;
-  }
+  skills!: Skills;
 
   constructor(private profileService: ProfileService) {}
 
   ngOnInit(): void {
-    this.profileService.get().subscribe((res) => (this.profile = res));
+    this.profileService.get().subscribe((res) => (this.skills = res.skills));
   }
 }
