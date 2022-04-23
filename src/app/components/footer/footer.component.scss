@@ -14,7 +14,8 @@ footer {
         transform: translateZ(0);
       }
     }
-    .credit h3 {
+    .credit .mat-subheading-2 {
+      display: block;
       margin-bottom: 60px;
     }
   }

@@ -1,5 +1,5 @@
 <mat-card [style]="'background-color:' + project.backgroundColor" class="mat-elevation-z0"
-  ><a [ngClass]="{ disabled: !project.url }" [href]="project.url" target="_blank"
+  ><a [ngClass]="{ disabled: !project.url }" [href]="project.url ?? '/'" target="_blank"
     ><img [src]="project.image" [alt]="project.title" loading="lazy"
   /></a>
 </mat-card>
