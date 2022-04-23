@@ -8,7 +8,5 @@ import { ProfileService } from './services';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(private profileService: ProfileService) {
-    this.profileService.get().subscribe();
-  }
+  constructor() {}
 }
