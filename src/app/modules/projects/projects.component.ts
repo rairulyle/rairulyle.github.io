@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.profileService.get().subscribe((res) => {
       this.projects = res.projects;
-      this.gitHubLink = res.socials.find((social) => (social.name = 'name'))?.url ?? '';
+      this.gitHubLink = res.socials.find((social) => social.name === 'GitHub')?.url ?? '';
     });
   }
 }
