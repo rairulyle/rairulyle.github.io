@@ -5,8 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutModule, DrawerModule, HeroModule, SkillsModule, ProjectsModule } from './components';
 import { CustomIconRegistryModule } from './custom-icon-registry.module';
+import { AboutModule, DrawerModule, HeroModule, SkillsModule, ProjectsModule } from './modules';
 import { BreakpointObserverService, ProfileService, ThemeSwitcherService } from './services';
 
 @NgModule({
