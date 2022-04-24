@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { InMemoryCache } from '@apollo/client';
-import { ApolloModule, APOLLO_OPTIONS, NamedOptions } from 'apollo-angular';
+import { InMemoryCache } from '@apollo/client/core';
+import { ApolloModule, APOLLO_NAMED_OPTIONS, NamedOptions } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 
 export function createApollo(httpLink: HttpLink): NamedOptions {
@@ -24,7 +24,7 @@ export function createApollo(httpLink: HttpLink): NamedOptions {
   imports: [ApolloModule],
   providers: [
     {
-      provide: APOLLO_OPTIONS,
+      provide: APOLLO_NAMED_OPTIONS,
       useFactory: createApollo,
       deps: [HttpLink],
     },

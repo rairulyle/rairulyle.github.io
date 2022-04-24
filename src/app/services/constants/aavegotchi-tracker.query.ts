@@ -1,7 +1,7 @@
 import { gql } from 'apollo-angular';
 
 export const GET_AAVEGOTCHI_LENDINGS = gql`
-  mutation GotchiLendings($whitelistId: String!, $timeCreated_gte: Int!, $timeCreated_lt: Int!) {
+  query AavegotchiLendings($whitelistId: String!, $timeCreated_gte: Int!, $timeCreated_lt: Int!) {
     gotchiLendings(
       first: 1000
       orderBy: id
@@ -33,6 +33,20 @@ export const GET_AAVEGOTCHI_LENDINGS = gql`
       splitBorrower
       splitOwner
       whitelistId
+    }
+  }
+`;
+
+export const GET_AAVEGOTCHI_EARNINGS = gql`
+  query AavegotchiEarnings($lendingIds: [String]!) {
+    gotchiLendings(first: 1000, where: { id_in: $lendingIds }) {
+      id
+      actualPeriod
+      endTimestamp
+      claimedFUD
+      claimedFOMO
+      claimedALPHA
+      claimedKEK
     }
   }
 `;
