@@ -134,7 +134,7 @@ export const PROFILE_DATA: Profile = {
     {
       title: 'Manulife - CWS',
       description:
-        'A multi-country customer website that allows users to easily view their Manulife policy information, check fund value, view payment information, pay online, and more!',
+        'A multi-country customer website that allows users to easily view their Manulife policy information, check fund value, view payment information, and pay online. All in a few taps and clicks on mobile phone, tablet or laptop.',
       backgroundColor: '#ccedde',
       image: `${projectImagePath}/Manulife.png`,
       url: 'https://online.manulife.com.ph/login',
@@ -142,7 +142,7 @@ export const PROFILE_DATA: Profile = {
     {
       title: 'Personal Home Assistant',
       description:
-        'A personal project that aims to provide home automation and a minimal design GUI. Supports Dark Mode.',
+        'A home project that aims to provide home automation and a minimal design GUI. Powered by Home Assistant, Google Home, and UI Lovelace Minimalist.',
       backgroundColor: '#d4dafe',
       image: `${projectImagePath}/HomeAssistant.png`,
       url: 'https://github.com/rairulyle/HA_UI-Lovelace-Minimalist-Dashboard',
@@ -166,7 +166,7 @@ export const PROFILE_DATA: Profile = {
     {
       title: 'Air Quality Monitoring System (AQMS)',
       description:
-        'A web application that aims to monitor the surface air quality from the different distant zones of a local municipality.',
+        'A local municipality project that aims to monitor the surface air quality from the different distant zones and provide necessary information such as the prevalent pollutant, its AQI value and synthesis, and the rolling 24-hour AQI Graph.',
       backgroundColor: '#b2dfdb',
       image: `${projectImagePath}/AQMS.png`,
       url: 'http://www.jocm.us/index.php?m=content&c=index&a=show&catid=221&id=1373',
