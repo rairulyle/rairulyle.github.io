@@ -150,7 +150,8 @@ export const PROFILE_DATA: Profile = {
     },
     {
       title: 'PSVita - Persona 5 Theme',
-      description: 'A personal project for PS Vita, a Persona 5-inspired theme with over 23,500+ downloads.',
+      description:
+        'A personal project Persona 5-inspired theme for PS Vita. Top 10 most downloaded theme with over 23,500+ downloads.',
       backgroundColor: '#f4b6b8',
       image: `${projectImagePath}/Persona5_PSV_Theme.png`,
       url: 'http://psv.altervista.org/theme.php?id=1521459131',
