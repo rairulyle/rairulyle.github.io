@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { AboutModule, DrawerModule, HeroModule, ProjectsModule, SkillsModule } from '@app/modules';
+import { DrawerModule } from '@app/modules';
 import { ProfileService } from '@app/services';
 
+import { AboutModule, HeroModule, ProjectsModule, SkillsModule } from './modules';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioComponent } from './portfolio.component';
 

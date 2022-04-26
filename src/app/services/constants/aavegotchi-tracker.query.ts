@@ -50,3 +50,6 @@ export const GET_AAVEGOTCHI_EARNINGS = gql`
     }
   }
 `;
+
+export const GET_AAVEGOTCHI_COIN_PRICE =
+  'https://api.coingecko.com/api/v3/simple/price?ids=aavegotchi,aavegotchi-fud,aavegotchi-fomo,aavegotchi-alpha,aavegotchi-kek&vs_currencies=php,usd';

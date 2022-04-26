@@ -11,7 +11,6 @@ export class AavegotchiTrackerComponent implements OnInit {
   constructor(private aavegotchiTrackerService: AavegotchiTrackerService) {}
 
   ngOnInit(): void {
-    this.aavegotchiTrackerService.getLendings().subscribe(({ data }) => console.log(data));
-    this.aavegotchiTrackerService.getEarnings().subscribe(({ data }) => console.log(data));
+    this.aavegotchiTrackerService.get().subscribe((res) => console.log(res));
   }
 }

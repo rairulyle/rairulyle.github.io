@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
-import { NAV_ITEMS } from './constants/nav-items';
+import { PAGE_NAV } from './constants/nav-items';
+import { NavItem } from './models/nav-item.model';
 
 @Component({
   selector: 'app-drawer',
@@ -8,8 +10,15 @@ import { NAV_ITEMS } from './constants/nav-items';
   styleUrls: ['./drawer.component.scss'],
 })
 export class DrawerComponent implements OnInit {
-  navItems = NAV_ITEMS;
-  constructor() {}
+  get navItems(): NavItem[] {
+    return this.isHomeRoute ? PAGE_NAV.HOME : [];
+  }
+
+  get isHomeRoute(): boolean {
+    return this.router.url === '/';
+  }
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 }

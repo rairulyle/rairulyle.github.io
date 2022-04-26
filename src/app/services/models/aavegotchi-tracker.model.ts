@@ -38,6 +38,19 @@ export interface AavegotchiEarnings {
   claimedKEK: string;
 }
 
-export interface AavegotchiEarningsPayload {
-  lendingIds: string[];
+export interface AavegotchiLendingEarnings extends AavegotchiLending {
+  earnings?: AavegotchiEarnings;
+}
+
+export interface AavegotchiCoinPrice {
+  aavegotchi: CoinCurrency;
+  'aavegotchi-alpha': CoinCurrency;
+  'aavegotchi-fomo': CoinCurrency;
+  'aavegotchi-fud': CoinCurrency;
+  'aavegotchi-kek': CoinCurrency;
+}
+
+interface CoinCurrency {
+  php: number;
+  usd: number;
 }
