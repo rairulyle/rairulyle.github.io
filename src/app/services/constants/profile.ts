@@ -170,7 +170,7 @@ export const PROFILE_DATA: Profile = {
         'A local municipality project that aims to monitor the surface air quality from the different distant zones and provide necessary information such as the prevalent pollutant, its AQI value and synthesis, and the rolling 24-hour AQI Graph.',
       backgroundColor: '#b2dfdb',
       image: `${projectImagePath}/AQMS.png`,
-      url: 'http://www.jocm.us/index.php?m=content&c=index&a=show&catid=221&id=1373',
+      url: 'https://www.researchgate.net/publication/338231298_Multi_Zone-Based_Surface_Air_Quality_Monitoring_via_Internet_of_Things',
       source: 'https://github.com/AQMS-Capstone/AQMS-Carmona',
     },
     {
