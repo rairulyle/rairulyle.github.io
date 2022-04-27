@@ -1,3 +1,5 @@
+import { AAVEGOTCHI_COIN } from './aavegotchi-coins.enum';
+
 export interface AavegotchiLending {
   id: string;
   upfrontCost: string;
@@ -5,6 +7,7 @@ export interface AavegotchiLending {
   tokensToShare: string[];
   gotchiTokenId: string;
   gotchi: Gotchi;
+  gotchiName?: string;
   timeCreated: string;
   timeAgreed: string;
   lastClaimed: string;
@@ -30,25 +33,19 @@ interface Gotchi {
 
 export interface AavegotchiEarnings {
   id: string;
-  actualPeriod: string;
-  endTimestamp: string;
-  claimedFUD: string;
-  claimedFOMO: string;
-  claimedALPHA: string;
-  claimedKEK: string;
+  actualPeriod?: string;
+  endTimestamp?: string;
+  claimedFUD?: string;
+  claimedFOMO?: string;
+  claimedALPHA?: string;
+  claimedKEK?: string;
 }
 
-export interface AavegotchiLendingEarnings extends AavegotchiLending {
-  earnings?: AavegotchiEarnings;
-}
+export interface AavegotchiLendingEarnings extends AavegotchiLending, AavegotchiEarnings {}
 
-export interface AavegotchiCoinPrice {
-  aavegotchi: CoinCurrency;
-  'aavegotchi-alpha': CoinCurrency;
-  'aavegotchi-fomo': CoinCurrency;
-  'aavegotchi-fud': CoinCurrency;
-  'aavegotchi-kek': CoinCurrency;
-}
+export type AavegotchiCoinPrice = {
+  [key in AAVEGOTCHI_COIN]: CoinCurrency;
+};
 
 interface CoinCurrency {
   php: number;
