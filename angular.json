@@ -121,8 +121,7 @@
       }
     }
   },
-  "defaultProject": "rairulyle-portfolio",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }
