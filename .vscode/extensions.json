@@ -3,7 +3,6 @@
     "johnpapa.angular-essentials",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "formulahendry.auto-rename-tag",
-    "apollographql.vscode-apollo"
+    "formulahendry.auto-rename-tag"
   ]
 }
