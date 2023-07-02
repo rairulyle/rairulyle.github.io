@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomIconRegistryModule } from './custom-icon-registry.module';
-import { GraphQLModule } from './graphql.module';
 import { DrawerModule } from './modules';
 import { PortfolioModule } from './pages';
 import { BreakpointObserverService, ThemeSwitcherService } from './services';
@@ -23,7 +22,6 @@ import { BreakpointObserverService, ThemeSwitcherService } from './services';
     RouterModule,
     DrawerModule,
     PortfolioModule,
-    GraphQLModule,
   ],
   providers: [ThemeSwitcherService, BreakpointObserverService],
   bootstrap: [AppComponent],
