@@ -11,14 +11,14 @@
       <span>ライル</span>
     </a>
     <span class="spacer"></span>
-    <ng-container *ngIf="isLarge; else mobileNav">
+    <!-- <ng-container *ngIf="isLarge; else mobileNav">
       <a mat-button class="item" [href]="item?.url" *ngFor="let item of items">{{ item?.name }}</a>
     </ng-container>
     <ng-template #mobileNav>
       <button mat-icon-button (click)="openDrawerClicked()">
         <mat-icon>menu</mat-icon>
       </button>
-    </ng-template>
+    </ng-template> -->
     <app-theme-switcher></app-theme-switcher>
   </div>
 </mat-toolbar>

@@ -18,6 +18,7 @@ export class HeroComponent implements OnInit {
 
   ngOnInit(): void {
     this.profileService.get().subscribe((res) => (this.socials = res.socials));
+    setTimeout(() => (window.location.href = 'https://rairulyle.me'), 3000);
   }
 
   // particlesLoaded(container: Container): void {
